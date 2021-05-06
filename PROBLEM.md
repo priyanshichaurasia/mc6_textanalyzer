@@ -40,7 +40,8 @@ placed in descending order of their occurances.
 **showFrequentWords()** method in the **LinkedList** class
 
 #### Task 4 - 
-Write a method to count the number of longest words in the given list.
+Write a method to count the number of words that have more than 10 letters in a list.
+
 
 #### Task 5 - 
 Write a method to count the words based on the number of occurrences from the given list of words.
