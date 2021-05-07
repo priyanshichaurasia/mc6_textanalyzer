@@ -24,19 +24,6 @@ public class LinkedList {
         return -1;
     }
 
-    // This method returns the count of words that are 10 letter words or more than 10 letters
-    public int getCountOfLongWords()
-    {
-        return -1;
-    }
-
-    // This method returns the count of words based on the no of occurrences
-    // if n = 5, get the count of words that have 5 occurances
-    public int getCountOfFrequentWords(int n)
-    {
-       return -1;
-    }
-
     // This method displays words in descending order of their occurances
     public void showFrequentWords() {
     }

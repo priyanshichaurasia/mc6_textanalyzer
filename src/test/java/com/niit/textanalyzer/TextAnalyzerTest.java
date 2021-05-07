@@ -73,21 +73,6 @@ public class TextAnalyzerTest {
     assertEquals(104,linkedList.getSize());
 }
 
-    @Test
-    public void givenALinkedListCountTheWordsThatAreTenLettersOrMore()
-    {
-        linkedList = textAnalyzer.readAndParseFile("src/main/resources/daffodils.txt");
-        assertEquals(3,linkedList.getCountOfLongWords());
-    }
-
-    @Test
-    public void givenTheNumberOfOccurancesReturnTheCountOfTheWordsWithTheOccurance()
-    {
-        linkedList = textAnalyzer.readAndParseFile("src/main/resources/daffodils.txt");
-        assertEquals(10,linkedList.getCountOfFrequentWords(2));
-        assertEquals(1,linkedList.getCountOfFrequentWords(11));
-        assertNotEquals(2,linkedList.getCountOfFrequentWords(11));
-    }
 
 
 

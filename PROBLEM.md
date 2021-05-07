@@ -3,6 +3,7 @@
 **Making lists is a routine activity in our daily lives. During the week we may make a list of
 things to be purchased over the weekend. Or it may be a list of people we wish to invite for dinner.
 In its simplest form a list consists of a series of items ordered sequentially.**
+
 A simple list of names could look like:
 - Michael Jackson
 - Tracy Chapman
@@ -13,10 +14,11 @@ A simple list of names could look like:
 **In this challenge you will use singly linked lists to implement a Text Analyzer.
 In the current age of word processors, it is so simple to look at the bottom of the screen and
 immediately come to know how many words we have typed in our document. Or how many characters we have used.
+
 How exactly is this done ? You will find out some of the basic building blocks for yourself as you tackle this challenge.**
 
 #### Task 1 – 
-Design a class called Word that can be used to store details of a word that is read from a text file.
+Design a class called **Word** that can be used to store details of a word that is read from a text file.
 Apart from the word itself, the class should have an attribute to store the number of times the same word
 occurs in the file. Define appropriate constructors and getter & setter methods for this class.
 
@@ -39,18 +41,3 @@ placed in descending order of their occurances.
 
 **showFrequentWords()** method in the **LinkedList** class
 
-#### Task 4 - 
-Write a method to count the number of words that have more than 10 letters in a list.
-
-
-#### Task 5 - 
-Write a method to count the words based on the number of occurrences from the given list of words.
- 
-
-
-## Instructions
-
-- Avoid printing unnecessary values other than expected output as given in sample
-- Take care of whitespace/trailing whitespace
-- Do not change the provided class/method names unless instructed
-- Follow best practices while coding
