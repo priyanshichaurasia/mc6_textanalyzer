@@ -6,13 +6,12 @@ public class LinkedList {
     Node end;
     // This method adds a Word node to the linked list
     public boolean addNode(String item) {
-        boolean ans=false;
         Node n = new Node(word);
         if(getSize()==0){
             startPtr=n;
         }
         else if(updateOccurance(item)==true){
-            int count= count+1;
+            int count = Word.occuranceCount();
           
         }
         else{
@@ -21,7 +20,7 @@ public class LinkedList {
                 temp=temp.next;
             }
             temp.next=n;
-            return ans = true;
+            return true;
         }
 
         return false;
