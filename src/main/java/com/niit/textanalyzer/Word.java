@@ -13,7 +13,7 @@ public class Word {
     public Word(String word,int occurance)
     {
         this.word=word;
-        this.occurance=occurance;
+        this.occurance=1;
     }
     // getters and setters
     public void setWord(String word){
@@ -23,9 +23,16 @@ public class Word {
         return word;
     }
     public void setOccurance(int occurance){
-        this.occurance=occurance;
+        this.occurance=1;
     }
     public int getOccurance(){
+        return occurance;
+    }
+
+    public int occuranceCount(){
+        {
+        occurance = occurance + 1;
+        }
         return occurance;
     }
 

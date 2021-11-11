@@ -17,7 +17,7 @@ public class TextAnalyzer {
         linkedList.getWord() = output[0];
         linkedList.getOccurance() = Integer.parseInt(output[1]);
         List l1 = new List(linkedList.getWord(),linkedList.getOccurance());
-        linkedList.addNode(l1);
+        // linkedList.addNode(l1);
         i=i++;
 
         return linkedList;
