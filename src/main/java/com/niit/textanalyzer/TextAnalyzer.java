@@ -14,11 +14,12 @@ public class TextAnalyzer {
         while(line!=null){
         String[] separator = new String []{"," , " " , "-"};
         String [] output = line.split(separator);
-        linkedList.getWord() = output[0];
-        linkedList.getOccurance() = Integer.parseInt(output[1]);
-        List l1 = new List(linkedList.getWord(),linkedList.getOccurance());
+        String word = output[0];
+        int occurance = Integer.parseInt(output[1]);
+        List l1 = new List(word,occurance);
         // linkedList.addNode(l1);
         i=i++;
+        }
 
         return linkedList;
     }
