@@ -30,8 +30,11 @@ public class Word {
     }
 
     public int occuranceCount(){
-        {
+        if(word.equals(word){
         occurance = occurance + 1;
+        }
+        else{
+            occurance=1;
         }
         return occurance;
     }
