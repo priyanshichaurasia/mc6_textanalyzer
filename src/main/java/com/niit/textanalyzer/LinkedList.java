@@ -6,7 +6,7 @@ public class LinkedList {
     Node end;
     // This method adds a Word node to the linked list
     public boolean addNode(String item) {
-        Node n = new Node(word);
+        Node n = new Node(item);
         if(getSize()==0){
             startPtr=n;
         }
@@ -28,7 +28,7 @@ public class LinkedList {
 
     // This method checks if a given word occurs in the linked list and returns true of false
     public boolean updateOccurance(String item) {
-        if(startPtr.item.equals(word)){
+        if(startPtr.item.equals(item)){
             return true;
         }
         else{

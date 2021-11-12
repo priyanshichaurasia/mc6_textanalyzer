@@ -16,7 +16,7 @@ public class TextAnalyzer {
         String [] output = line.split(String.valueOf(separator));
         String word = output[0];
         int occurance = Integer.parseInt(output[1]);
-        List l1 = new List(word,occurance);
+        Word l1 = new Word(word,occurance);
         // linkedList.addNode(l1);
         i=i++;
         }
