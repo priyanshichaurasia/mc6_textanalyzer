@@ -11,28 +11,18 @@ public class LinkedList {
             startPtr=n;
             return false;
         }
-        else 
-            {
-                if(!updateOccurance(item)){
-            // Word w1 = new Word();
-            // int count = w1.occuranceCount();
-            // return true;
-                    Node temp = startPtr;
-                    while(temp.next!=null){
-                        temp=temp.next;
-                    }
-                    temp.next=n;
-                }
-                    return true;
+        else if(updateOccurance(item)){
+            Word w1 = new Word();
+            int count = w1.occuranceCount();
+        }
+        else{
+            Node temp = startPtr;
+            while(temp.next!=null){
+                temp=temp.next;
             }
-        // else{
-        //     Node temp = startPtr;
-        //     while(temp.next!=null){
-        //         temp=temp.next;
-        //     }
-        //     temp.next=n;
-        //     return true;
-        // }
+            temp.next=n;
+        }
+        return true;
     }
 
     // This method checks if a given word occurs in the linked list and returns true of false
@@ -42,9 +32,7 @@ public class LinkedList {
             if(temp.equals(item)){
                 return true;
             }
-            else{
-                temp=temp.next;
-            }
+            temp=temp.next;
         }
         return false;
     }
