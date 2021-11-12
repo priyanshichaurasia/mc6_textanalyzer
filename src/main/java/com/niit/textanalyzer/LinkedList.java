@@ -14,6 +14,7 @@ public class LinkedList {
         else if(updateOccurance(item)){
             Word w1 = new Word();
             int count = w1.occuranceCount();
+            return true;
         }
         else{
             Node temp = startPtr;
@@ -21,8 +22,8 @@ public class LinkedList {
                 temp=temp.next;
             }
             temp.next=n;
+            return true;
         }
-        return true;
     }
 
     // This method checks if a given word occurs in the linked list and returns true of false
