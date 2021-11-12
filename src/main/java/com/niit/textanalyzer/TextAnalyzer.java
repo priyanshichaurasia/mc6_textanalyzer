@@ -16,6 +16,7 @@ public class TextAnalyzer {
             String [] output = line.split(String.valueOf(separator));
             Word l1 = new Word(output[0],Integer.parseInt(output[1]));
             linkedList.addNode(output[0]);
+            line=br.readLine();
             }
         }
         catch(IOException ex){
