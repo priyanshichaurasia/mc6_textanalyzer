@@ -42,6 +42,6 @@ public class Word {
     // Override the toString() method in this format Word={word=xxx,wordOccurance=x}
         @Override
         public String toString() {
-            return ("{words="+getWord() +",wordOccurance="+getOccurance()+"}");
+            return ("Word{word='"+getWord() +"', wordOccurance="+getOccurance()+"}");
         }
 }

@@ -15,8 +15,8 @@ public class TextAnalyzer {
             while(line!=null){
             String[] separator = new String []{"," , " " , "-"};
             String [] output = line.split(String.valueOf(separator));
-            Word l1 = new Word(output[0],Integer.parseInt(output[1]);
-            linkedList.addNode(l1);
+            Word l1 = new Word(output[0],Integer.parseInt(output[1]));
+            linkedList.addNode(output[0]);
             i=i++;
             }
         }
