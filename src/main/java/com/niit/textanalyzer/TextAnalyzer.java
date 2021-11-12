@@ -12,8 +12,9 @@ public class TextAnalyzer {
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String line = br.readLine();
             while(line!=null){
-            String[] separator = new String []{"," , " " , "-"};
-            String [] output = line.split(String.valueOf(separator));
+            // String[] separator = new String []{"," , " " , "-"};
+            // String [] output = line.split(String.valueOf(separator));
+            String [] output = line.split("[,.;:[\\s]]"); 
             Word l1 = new Word(output[0],Integer.parseInt(output[1]));
             linkedList.addNode(output[0]);
             line=br.readLine();
