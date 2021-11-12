@@ -8,17 +8,20 @@ public class TextAnalyzer {
     public LinkedList readAndParseFile(String filePath) {
 
         LinkedList linkedList = new LinkedList();
-        BufferedReader br = new BufferedReader(new FileReader(filePath));
-        String line = br.readLine();
-        int i=0;
-        while(line!=null){
-        String[] separator = new String []{"," , " " , "-"};
-        String [] output = line.split(String.valueOf(separator));
-        String word = output[0];
-        int occurance = Integer.parseInt(output[1]);
-        Word l1 = new Word(word,occurance);
-        // linkedList.addNode(l1);
-        i=i++;
+        try{
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            String line = br.readLine();
+            int i=0;
+            while(line!=null){
+            String[] separator = new String []{"," , " " , "-"};
+            String [] output = line.split(String.valueOf(separator));
+            Word l1 = new Word(output[0],Integer.parseInt(output[1]);
+            linkedList.addNode(l1);
+            i=i++;
+            }
+        }
+        catch(IOException ex){
+            System.out.println(ex.getMessage());
         }
 
         return linkedList;
