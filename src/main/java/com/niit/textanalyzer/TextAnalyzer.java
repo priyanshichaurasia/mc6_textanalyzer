@@ -11,13 +11,11 @@ public class TextAnalyzer {
         try{
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String line = br.readLine();
-            int i=0;
             while(line!=null){
             String[] separator = new String []{"," , " " , "-"};
             String [] output = line.split(String.valueOf(separator));
             Word l1 = new Word(output[0],Integer.parseInt(output[1]));
             linkedList.addNode(output[0]);
-            i=i++;
             }
         }
         catch(IOException ex){
