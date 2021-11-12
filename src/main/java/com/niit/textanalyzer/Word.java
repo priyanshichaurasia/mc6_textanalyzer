@@ -30,7 +30,7 @@ public class Word {
     }
 
     public int occuranceCount(){
-        if(word.equals(word)){
+        if(this.word.equals(word)){
         occurance = occurance + 1;
         }
         else{

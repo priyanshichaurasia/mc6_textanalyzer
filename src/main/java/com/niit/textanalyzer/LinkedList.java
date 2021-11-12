@@ -9,9 +9,12 @@ public class LinkedList {
         Node n = new Node(item);
         if(getSize()==0){
             startPtr=n;
+            return false;
         }
         else if(updateOccurance(item)==true){
-             int count = getSize();
+            Word w1 = new Word();
+            int count = w1.occuranceCount();
+            return true;
         }
         else{
             Node temp = startPtr;
@@ -21,15 +24,12 @@ public class LinkedList {
             temp.next=n;
             return true;
         }
-
-        return false;
     }
 
     // This method checks if a given word occurs in the linked list and returns true of false
     public boolean updateOccurance(String item) {
         
-        if(startPtr.word.equals(item)){
-            
+        if(startPtr.equals(item)){
             return true;
         }
         else{
@@ -40,10 +40,10 @@ public class LinkedList {
     // This method checks if the list is empty or not
     public boolean isEmpty(){
         if(startPtr==null){
-            return getSize() == 0;
+            return true;
         }
         else{
-            return getSize()==1;
+            return false;
         }
         
     }
