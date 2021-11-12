@@ -6,12 +6,13 @@ public class LinkedList {
     Node end;
     // This method adds a Word node to the linked list
     public boolean addNode(String item) {
-        Node n = new Node(item);
+        Node n = new Node(data);
         if(getSize()==0){
             startPtr=n;
         }
         else if(updateOccurance(item)==true){
-            int count = Word.occuranceCount();
+            Word w1 = new Word();
+            int count = w1.occuranceCount(); 
           
         }
         else{
@@ -28,7 +29,8 @@ public class LinkedList {
 
     // This method checks if a given word occurs in the linked list and returns true of false
     public boolean updateOccurance(String item) {
-        if(startPtr.item.equals(item)){
+        
+        if(startPtr.equals(item)){
             return true;
         }
         else{
@@ -62,9 +64,18 @@ public class LinkedList {
 
     // This method displays words in descending order of their occurances
     public void showFrequentWords() {
+        
     }
     //This method displays the word list
     public void showWordList(){
+        Node temp;
+        if(startPtr!=null){
+            temp = startPtr;
+            while(temp!=null){
+                System.out.println(temp.data);
+                temp=temp.next;
+            }
+        }
     }
 
 }
