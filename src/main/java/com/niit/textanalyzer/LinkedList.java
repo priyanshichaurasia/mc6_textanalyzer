@@ -28,13 +28,16 @@ public class LinkedList {
 
     // This method checks if a given word occurs in the linked list and returns true of false
     public boolean updateOccurance(String item) {
-        
-        if(startPtr.equals(item)){
-            return true;
+        Node temp=startPtr;
+        while(temp!=null){
+            if(temp.equals(item)){
+                return true;
+            }
+            else{
+                temp=temp.next;
+            }
         }
-        else{
         return false;
-        }
     }
 
     // This method checks if the list is empty or not
