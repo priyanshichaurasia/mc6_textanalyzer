@@ -15,7 +15,6 @@ public class LinkedList {
         else if(updateOccurance(item)){
             Word w1 = new Word();
             int count = w1.occuranceCount();
-            return true;
         }
         else{
             Node temp = startPtr;
@@ -23,8 +22,8 @@ public class LinkedList {
                 temp=temp.next;
             }
             temp.next=n;
-            return true;
         }
+        return true;
     }
 
     // This method checks if a given word occurs in the linked list and returns true of false
@@ -53,14 +52,14 @@ public class LinkedList {
     // This method returns the size of the linked list
     public int getSize()
     {
-        int count = 0;
+        int count=0;
         Node temp = startPtr;    
             
         while(temp!=null) {    
-            count++;    
+            count=count+1;
             temp = temp.next;    
         }    
-        return count; 
+        return count;
     }
 
     // This method displays words in descending order of their occurances

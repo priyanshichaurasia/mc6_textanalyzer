@@ -23,7 +23,7 @@ public class Word {
         return word;
     }
     public void setOccurance(int occurance){
-        this.occurance=1;
+        this.occurance=occurance;
     }
     public int getOccurance(){
         return occurance;
@@ -34,7 +34,7 @@ public class Word {
         occurance = occurance + 1;
         }
         else{
-            occurance=1;
+            occurance=this.occurance;
         }
         return occurance;
     }
