@@ -30,7 +30,7 @@ public class LinkedList {
     public boolean updateOccurance(String item) {
         Node temp=startPtr;
         while(temp!=null){
-            if(temp.equals(item)){
+            if(temp.word.getWord().equals(item)){
                 return true;
             }
             temp=temp.next;
