@@ -30,9 +30,9 @@ public class Word {
     }
 
     public int occuranceCount(){
-        if(this.word.equals(word)){
-            occurance++;
-        }
+        // if(this.word.equals(word)){
+            this.occurance++;
+        //}
         return occurance;
     }
 
