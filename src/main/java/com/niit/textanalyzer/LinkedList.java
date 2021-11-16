@@ -6,14 +6,15 @@ public class LinkedList {
     Node end;
     // This method adds a Word node to the linked list
     public boolean addNode(String item) {
-        
-        Node n = new Node(item);
+        Word w1 = new Word();
+        w1.setWord(item);
+        Node n = new Node(w1);
         if(getSize()==0){
             startPtr=n;
             return false;
         }
         else if(updateOccurance(item)){
-            Word w1 = new Word();
+            //Word w1 = new Word();
             int count = w1.occuranceCount();
         }
         else{
@@ -30,7 +31,7 @@ public class LinkedList {
     public boolean updateOccurance(String item) {
         Node temp=startPtr;
         while(temp!=null){
-            if(temp.word.getWord().equals(item)){
+            if(temp.data.getWord().equals(item)){
                 return true;
             }
             temp=temp.next;
@@ -72,7 +73,7 @@ public class LinkedList {
         if(startPtr!=null){
             temp = startPtr;
             while(temp!=null){
-                System.out.println(temp.word);
+                System.out.println(temp.data);
                 temp=temp.next;
             }
         }
