@@ -13,9 +13,11 @@ public class TextAnalyzer {
             String line = br.readLine();
             while(line!=null){
             String [] output = line.split("[,.;:[\\s]]"); 
-            for(int i=0;i<output.length;i++){
-                linkedList.addNode(output[i]);
-            }
+            for(String s:output){
+                    if(!s.equals("")){
+                    linkedList.addNode(s);
+                    }
+                }
             line=br.readLine();
             }
         }
