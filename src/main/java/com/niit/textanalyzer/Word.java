@@ -23,16 +23,14 @@ public class Word {
         return word;
     }
     public void setOccurance(int occurance){
-        this.occurance=occurance;
+        this.occurance=1;
     }
     public int getOccurance(){
-        return occurance;
+        return 1;
     }
 
     public int occuranceCount(){
-        // if(this.word.equals(word)){
             this.occurance++;
-        //}
         return occurance;
     }
 
