@@ -20,9 +20,7 @@ public class LinkedList {
         else{
             Node temp = startPtr;
             while(temp.next!=null){
-                if(temp.data.getWord().equalsIgnoreCase(item)){
-                    temp=temp.next;
-                }
+                temp=temp.next;
             }
             temp.next=n;
         }
