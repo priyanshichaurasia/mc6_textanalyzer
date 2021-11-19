@@ -20,7 +20,9 @@ public class LinkedList {
         else{
             Node temp = startPtr;
             while(temp.next!=null){
-                temp=temp.next;
+                if(temp.data.getWord().equalsIgnoreCase(item)){
+                    temp=temp.next;
+                }
             }
             temp.next=n;
         }
@@ -56,12 +58,12 @@ public class LinkedList {
         int count=0;
         Node temp = startPtr; 
         while(temp!=null) {
-            System.out.println("Temp => "+ temp.data + " next " + temp.next);
-            Node ptr = temp.next;
-            if(!temp.data.getWord().equalsIgnoreCase(ptr.data.getWord())){
+            // System.out.println("Temp => "+ temp.data + " next " + temp.next);
+            // Node ptr = temp.next;
+            // if(!temp.data.getWord().equalsIgnoreCase(ptr.data.getWord())){
                 count=count+1;
-                ptr = ptr.next;    
-            }
+            //     ptr = ptr.next;    
+            // }
             temp = temp.next;    
         }    
         return count;
