@@ -31,7 +31,7 @@ public class LinkedList {
     public boolean updateOccurance(String item) {
         Node temp=startPtr;
         while(temp!=null){
-            if(temp.data.getWord().equals(item)){
+            if(temp.data.getWord().equalsIgnoreCase(item)){
                 return true;
             }
             temp=temp.next;

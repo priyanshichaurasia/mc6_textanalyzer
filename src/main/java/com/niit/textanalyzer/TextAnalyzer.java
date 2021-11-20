@@ -12,7 +12,7 @@ public class TextAnalyzer {
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String line = br.readLine();
             while(line!=null){
-            String [] output = line.split("[,.;:[\\s]]"); 
+            String [] output = line.split("[,-.;:[\\s]]"); 
             for(String s:output){
                     if(!s.equals("")){
                     linkedList.addNode(s);
